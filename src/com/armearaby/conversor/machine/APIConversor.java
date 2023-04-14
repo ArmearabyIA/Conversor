@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class APIConversor implements LogicaAPI{
+public class APIConversor implements LogicaAPI {
 
     public double get(String fechaFormateada, String montoDivisa,String cambiarDe, String pasarA) {
         double valorFinal = 0;

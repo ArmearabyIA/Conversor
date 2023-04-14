@@ -8,42 +8,42 @@ public class Operador implements LogicaAPI{
         public void resultado(String tipoDivisa, String montoDivisa) {
                 String datosAPI[];
                 datosAPI = new String[5];
-                String cambiarDe = " ", pasarA = " ";
+                String cambiarDe = "", pasarA = "";
 
                 switch (tipoDivisa) {
                         case "De MXN a Dolares":
-                                ;
+
                                 cambiarDe = "MXN";
                                 pasarA = "USD";
                                 break;
 
                         case "De MXN a Euro":
-                                ;
+
                                 cambiarDe = "MXN";
                                 pasarA = "EUR";
                                 break;
                         case "De MXN a Yen Japones":
-                                ;
+
                                 cambiarDe = "MXN";
                                 pasarA = "JPY";
                                 break;
                         case "De MXN a Won SurCOreano":
-                                ;
+
                                 cambiarDe = "MXN";
                                 pasarA = "KRW";
                                 break;
                         case "De MXN a Peso Colombiano":
-                                ;
+
                                 cambiarDe = "MXN";
                                 pasarA = "COP";
                                 break;
                         case "De Dolares a MXN":
-                                ;
+
                                 cambiarDe = "USD";
                                 pasarA = "MXN";
                                 break;
                         case "De Euro a MXN":
-                                ;
+
                                 cambiarDe = "EUR";
                                 pasarA = "MXN";
                                 break;

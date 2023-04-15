@@ -13,7 +13,7 @@ public class APIConversor implements LogicaAPI {
         double valorFinal = 0;
 
         try {
-            System.out.println("Excecution process");
+            System.out.println("API Excecution in progress... connecting API ExchangeRates");
             URL url = new URL("https://api.apilayer.com/exchangerates_data/convert?to=" + pasarA + "&from=" + cambiarDe + "&amount=" + montoDivisa + "&apikey=6oEYypXV2u8ywvcmW5PRgnhG1Ben81Fu");
             HttpURLConnection connectionAPI = (HttpURLConnection) url.openConnection();
             connectionAPI.setRequestMethod("GET");
@@ -38,6 +38,7 @@ public class APIConversor implements LogicaAPI {
             connectionAPI.disconnect();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error en obtencion de datos de API", "Error", JOptionPane.ERROR_MESSAGE);
+            e.printStackTrace();
             motor reintentar = new motor();
             reintentar.inicio();
         }

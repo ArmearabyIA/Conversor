@@ -6,18 +6,18 @@
 
 <li>13/04/23 : Inicio del desarrollo de programa base.</li>
 <li>14/04/23 : Implementacion de metodo main para la ejecucion del programa</li>
+<li>14/04/23 : Error de sintaxis SOLUCIONADO.</li>
 
 
 <h3>Bugs encontrados y que se solucionaran en el transcurso.</h3>
 
-<li>ERROR RESPONSE SERVER CODE : 400, posiblemente por un error en el sintaxis
-de la conexion con la API, se esta trabajando en ello</li>
+<li>Actualmente no se ha encontrado algun bug. Se sigue haciendo debug.</li>
 
 <h3>Implementaciones a futuro</h3>
 
 <li>Activacion del modulo "Conversor de Temperatura" actualmente
 deshabilitado del programa</li>
-<li>Modificacion del sintaxis de la API para una respuesta correcta al programa</li>
+<li>Se implementaran funciones adicionales como temperatura y medicion; metrico - imperial</li>
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 <br>
 Desarrollador Humberto Martinez (ArmearabyIA)

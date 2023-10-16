@@ -11,38 +11,38 @@ public class Operador implements LogicaAPI{
                 String cambiarDe = "", pasarA = "";
 
                 switch (tipoDivisa) {
-                        case "De MXN a USD":
+                        case "MXN a USD":
 
                                 cambiarDe = "MXN";
                                 pasarA = "USD";
                                 break;
 
-                        case "De MXN a EUR":
+                        case "MXN a EUR":
 
                                 cambiarDe = "MXN";
                                 pasarA = "EUR";
                                 break;
-                        case "De MXN a Yen Japones":
+                        case "MXN a Yen Japones":
 
                                 cambiarDe = "MXN";
                                 pasarA = "JPY";
                                 break;
-                        case "De MXN a Won SurCoreano":
+                        case "MXN a Won SurCoreano":
 
                                 cambiarDe = "MXN";
                                 pasarA = "KRW";
                                 break;
-                        case "De MXN a peso Colombiano":
+                        case "MXN a peso Colombiano":
 
                                 cambiarDe = "MXN";
                                 pasarA = "COP";
                                 break;
-                        case "De USD a MXN":
+                        case "USD a MXN":
 
                                 cambiarDe = "USD";
                                 pasarA = "MXN";
                                 break;
-                        case "De EUR a MXN":
+                        case "EUR a MXN":
 
                                 cambiarDe = "EUR";
                                 pasarA = "MXN";
@@ -62,7 +62,7 @@ public class Operador implements LogicaAPI{
                 double valorFormateado = 0;
                 valorFormateado = Math.round((valorConvertido * 100.0)/100.0);
 
-                JOptionPane.showMessageDialog(null,"El resultado de la conversion " + tipoDivisa + " es : $ " + valorFormateado + " al dia " + fechaFormateada);
+                JOptionPane.showMessageDialog(null,"El resultado de la conversion $ " + montoDivisa + " " + tipoDivisa + " es : $ " + valorFormateado + " al dia " + fechaFormateada);
                 MensajeFin mensajeFin = new MensajeFin();
                 mensajeFin.fin();
 

@@ -8,6 +8,7 @@
 <li>14/04/23 : Implementacion de metodo main para la ejecucion del programa.</li>
 <li>14/04/23 : Error de sintaxis SOLUCIONADO.</li>
 <li>16/10/23 : Se ha retomado el trabajo en el proyecto, seguiremos informando.</li>
+<li>16/10/23 : Se modifico el codigo para mejorar la legibilidad del usuario.</li>
 
 
 <h3>Bugs encontrados y que se solucionaran en el transcurso.</h3>

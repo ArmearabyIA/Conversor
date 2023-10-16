@@ -5,7 +5,7 @@
 <h3>Historial de cambios del programa: </h3>
 
 <li>13/04/23 : Inicio del desarrollo de programa base.</li>
-<li>14/04/23 : Implementacion de metodo main para la ejecucion del programa</li>
+<li>14/04/23 : Implementacion de metodo main para la ejecucion del programa.</li>
 <li>14/04/23 : Error de sintaxis SOLUCIONADO.</li>
 <li>16/10/23 : Se ha retomado el trabajo en el proyecto, seguiremos informando.</li>
 

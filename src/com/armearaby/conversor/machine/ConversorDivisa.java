@@ -6,7 +6,7 @@ public class ConversorDivisa extends Operador {
 
     public void getData(){
 
-        Object [] opcionesDivisa={"De MXN a USD", "De MXN a EUR", "De MXN a Yen Japones", "De MXN a Won SurCoreano", "De MXN a peso Colombiano", "De USD a MXN", "De EUR a MXN"};
+        Object [] opcionesDivisa={"MXN a USD", "MXN a EUR", "MXN a Yen Japones", "MXN a Won SurCoreano", "MXN a peso Colombiano", "USD a MXN", "EUR a MXN"};
         Object opcionesEleccionDivisa = JOptionPane.showInputDialog(null,"Seleccione una opcion:","Inicio/menu",JOptionPane.QUESTION_MESSAGE,null,opcionesDivisa, opcionesDivisa[0]);
         System.out.println(opcionesEleccionDivisa);
         String opcionDivisaElegida = (String)opcionesEleccionDivisa;

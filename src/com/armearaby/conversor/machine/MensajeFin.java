@@ -5,15 +5,15 @@ import javax.swing.*;
 public class MensajeFin {
 
     public void fin(){
-        System.out.println("Finalizar");
-        Object mensajeOpcion = JOptionPane.showConfirmDialog(null, "Desea continuar?","Seleccione una opcion",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
-        int mensaje = (Integer) mensajeOpcion;
+        System.out.println("Se ha lanzado la opcion de mensaje final al usuario."); //opcion solo visible en consola jdk
+        Object mensajeFinalOpcion = JOptionPane.showConfirmDialog(null, "Desea continuar?","Seleccione una opcion",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+        int opcionFinal = (Integer) mensajeFinalOpcion;
 
-        if(mensaje == 0 ) {
+        if(opcionFinal == 0 ) {
             motor intentarDeNuevo = new motor();
             intentarDeNuevo.inicio();
-        } else if (mensaje == 1) {
-            JOptionPane.showMessageDialog(null, "Finalizo la ejecucion", "Gracias por usar mi conversor", JOptionPane.INFORMATION_MESSAGE);
+        } else if (opcionFinal == 1) {
+            JOptionPane.showMessageDialog(null, "Fin de la ejecucion", "Gracias por usar conversor de divisas", JOptionPane.INFORMATION_MESSAGE);
         }
     }
 }

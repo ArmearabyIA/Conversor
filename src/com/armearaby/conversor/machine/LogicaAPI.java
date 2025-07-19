@@ -10,6 +10,6 @@ public interface LogicaAPI {
     LocalDate actualDate = LocalDate.now();
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd LLLL yyyy");
     String fechaFormateada = actualDate.format(formatter);
-
+    //se crea una fecha con el formato regional de mexico
 
 }

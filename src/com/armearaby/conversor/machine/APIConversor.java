@@ -9,15 +9,17 @@ import java.util.Scanner;
 
 public class APIConversor implements LogicaAPI {
 
-    public double get(String fechaFormateada, String montoDivisa,String cambiarDe, String pasarA) {
+    
+	public double get(String fechaFormateada, String montoDivisa,String cambiarDe, String pasarA) {
         double valorFinal = 0;
 
         try {
-            System.out.println("API Excecution in progress... connecting API ExchangeRates");
-            URL url = new URL("https://api.apilayer.com/exchangerates_data/convert?to=" + pasarA + "&from=" + cambiarDe + "&amount=" + montoDivisa + "&apikey=6oEYypXV2u8ywvcmW5PRgnhG1Ben81Fu");
+            System.out.println("Se esta realizando un intento de conexion al API ExchangeRates");
+			URL url = new URL("https://api.apilayer.com/exchangerates_data/convert?to=" + pasarA + "&from=" + cambiarDe + "&amount=" + montoDivisa + "&apikey=6oEYypXV2u8ywvcmW5PRgnhG1Ben81Fu");
             HttpURLConnection connectionAPI = (HttpURLConnection) url.openConnection();
             connectionAPI.setRequestMethod("GET");
             connectionAPI.setRequestProperty("apikey", "6oEYypXV2u8ywvcmW5PRgnhG1Ben81Fu");
+            System.out.println(url);
 
             if (connectionAPI.getResponseCode() == 200) {
                 List informationString = new ArrayList();
@@ -33,7 +35,7 @@ public class APIConversor implements LogicaAPI {
                 valorFinal = Double.parseDouble(valor);
                 System.out.println("El resultado es: " + valorFinal);
             } else {
-                System.out.println("Error de respuesta recibido..." + connectionAPI.getResponseCode());
+                System.out.println("Se ha recibido el siguiente codigo de respuesa erronea del API :" + connectionAPI.getResponseCode());
             }
             connectionAPI.disconnect();
         } catch (Exception e) {

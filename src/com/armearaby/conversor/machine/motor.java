@@ -9,14 +9,14 @@ public class motor {
 
     public void inicio() {
 
-        Object [] opciones ={"Convertir divisa"/*, "Convertir Temperatura"*/};
-        Object opcionEleccion = JOptionPane.showInputDialog(null,"Seleccione una opcion de conversion de divisa:", "Menu Principal",JOptionPane.QUESTION_MESSAGE,null,opciones, opciones[0]);
+        Object [] opciones ={"Divisas"/*, "Convertir Temperatura"*/};
+        Object opcionEleccion = JOptionPane.showInputDialog(null,"Seleccione una opcion de conversion:", "Menu Principal",JOptionPane.QUESTION_MESSAGE,null,opciones, opciones[0]);
         String opcionSeleccionada = (String)opcionEleccion;
 
         if(opcionSeleccionada!=null){
 
             switch (opcionSeleccionada){
-                case "Convertir divisa" :
+                case "Divisas" : //crea una opcion seleccionable por el usuario
 
                     ConversorDivisa divisaConvertir = new ConversorDivisa();
                     divisaConvertir.getData();

@@ -8,7 +8,7 @@ public class ConversorDivisa extends Operador {
 
         Object [] opcionesDivisa={"Dolar Estadounidense a Peso Mexicano", "Euro a Peso Mexicano", "Dolar Canadiense a Peso Mexicano", "Peso Mexicano a Dolar Estadounidense", "Peso Mexicano a Euros", "Peso Mexicano a Dolar Canadiense", "Peso Mexicano a Peso Colombiano"};
         Object opcionesEleccionDivisa = JOptionPane.showInputDialog(null,"Seleccione una opcion:","Inicio/menu",JOptionPane.QUESTION_MESSAGE,null,opcionesDivisa, opcionesDivisa[0]);
-        System.out.println(opcionesEleccionDivisa);
+        //System.out.println(opcionesEleccionDivisa);
         String opcionDivisaElegida = (String)opcionesEleccionDivisa;
 
         if(opcionesEleccionDivisa == null){

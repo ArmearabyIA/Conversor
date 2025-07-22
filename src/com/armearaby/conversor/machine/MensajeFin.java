@@ -5,7 +5,7 @@ import javax.swing.*;
 public class MensajeFin {
 
     public void fin(){
-        System.out.println("Se ha lanzado la opcion de mensaje final al usuario."); //opcion solo visible en consola jdk
+        //System.out.println("Se ha lanzado la opcion de mensaje final al usuario."); //opcion solo visible en consola jdk
         Object mensajeFinalOpcion = JOptionPane.showConfirmDialog(null, "Desea continuar?","Seleccione una opcion",JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
         int opcionFinal = (Integer) mensajeFinalOpcion;
 

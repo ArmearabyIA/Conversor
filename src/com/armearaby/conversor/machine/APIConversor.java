@@ -14,7 +14,7 @@ public class APIConversor implements LogicaAPI {
         double valorFinal = 0;
 
         try {
-            System.out.println("Se esta realizando un intento de conexion al API ExchangeRates");
+            //System.out.println("Se esta realizando un intento de conexion al API ExchangeRates");
 			URL url = new URL("https://api.apilayer.com/exchangerates_data/convert?to=" + pasarA + "&from=" + cambiarDe + "&amount=" + montoDivisa + "&apikey=6oEYypXV2u8ywvcmW5PRgnhG1Ben81Fu");
             HttpURLConnection connectionAPI = (HttpURLConnection) url.openConnection();
             connectionAPI.setRequestMethod("GET");
@@ -33,7 +33,7 @@ public class APIConversor implements LogicaAPI {
                 String valor = (String) informationString.get(12);
                 valor = valor.replaceAll("\"result\": ", "");
                 valorFinal = Double.parseDouble(valor);
-                System.out.println("El resultado es: " + valorFinal);
+                //System.out.println("El resultado es: " + valorFinal);
             } else {
                 System.out.println("Se ha recibido el siguiente codigo de respuesa erronea del API :" + connectionAPI.getResponseCode());
             }
